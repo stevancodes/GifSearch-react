@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+$color: #1a73e8;
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #212737;
+
+  header {
+    background-color: $color;
+    color: white;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    background-color: #212737;
+    align-items: center;
+
+    h1 {
+      font-weight: 100;
+      margin: 15px 0;
+      padding: 10px 0;
+      // color: rgb(161, 161, 76);
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+      background: #EBC715;
+      background: radial-gradient(circle farthest-corner at center center, #EBC715 34%, #1A54DB 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    input {
+      width: 40vw;
+      margin: 10px 30px;
+      outline: none;
+      border: solid 2px $color;
+      -webkit-box-shadow: 0px 0px 2px 0px $color;
+      -moz-box-shadow: 0px 0px 2px 0px $color;
+      box-shadow: 0px 0px 2px 0px $color;
+      height: 30px;
+      background-color: #212737;
+      border-radius: 10px;
+      color: white;
+      padding-left: 10px;
+
+      &:focus {
+        border: solid 2px rgb(147, 62, 62);
+        -webkit-box-shadow: 0px 0px 2px 0px $color;
+        -moz-box-shadow: 0px 0px 2px 0px $color;
+        box-shadow: 0px 0px 2px 0px $color;
+      }
+    }
+
+    .search-results {
+      display: flex;
+      align-self: center;
+      width: 100%;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      background-color: #212737;
+      // padding: 20px 80px;
+
+      .result-col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        // margin: 0 5px;
+
+        .slika {
+          cursor: pointer;
+          transition: 300ms;
+
+          &:hover {
+            transform: scale(1.2);
+            z-index: 999;
+          }
+
+        }
+
+
+        //   &.big {
+        //     height: 350px;
+        //     background-color: aquamarine;
+        //   }
+        // }
+        // #href {
+        //   display: block;
+        // }
+      }
+    }
+  }
+}
