@@ -40,15 +40,13 @@ $color: #1a73e8;
       font-weight: 100;
       margin: 15px 0;
       padding: 10px 0;
-      // color: rgb(161, 161, 76);
       display: flex;
       justify-content: center;
       font-weight: 700;
-      background: #EBC715;
       background: radial-gradient(circle farthest-corner at center center, #EBC715 34%, #1A54DB 100%);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-clip: text;
     }
 
     input {
