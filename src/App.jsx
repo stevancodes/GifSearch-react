@@ -8,7 +8,7 @@ export const App = (props) => {
 
   useEffect(() => {
     fetch(
-      `https://api.giphy.com/v1/gifs/search?api_key=Wz73ukioNDkVBsStn6TGf8JQdyAdf6Jm&q=${input}&limit=35&offset=0&rating=g&lang=en`
+      `https://api.giphy.com/v1/gifs/search?api_key=Wz73ukioNDkVBsStn6TGf8JQdyAdf6Jm&q=${input}&limit=50&offset=0&rating=g&lang=en`
     )
       .then((res) => res.json())
       .then((data) => {
