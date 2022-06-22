@@ -43,7 +43,7 @@ $color: #1a73e8;
       display: flex;
       justify-content: center;
       font-weight: 700;
-      background: radial-gradient(circle farthest-corner at center center, #EBC715 34%, #1A54DB 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(rgb(195, 25, 25)), to(rgb(38, 134, 235)));
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
